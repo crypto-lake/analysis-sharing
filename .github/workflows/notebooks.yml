@@ -1,0 +1,46 @@
+name: Execute notebooks
+
+on: [push]
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+      with:
+        fetch-depth: 0  # OR "2" -> To retrieve the preceding commit.
+    - uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+        cache: 'pip'
+    - uses: syphar/restore-virtualenv@v1
+      id: cache-virtualenv
+      with:
+        requirement_files: requirements.txt
+    - run: pip install -r requirements.txt
+      if: steps.cache-virtualenv.outputs.cache-hit != 'true'
+    - name: Cache Lake data
+      id: cache-lake-data
+      uses: actions/cache@v3
+      with:
+        path: .lake_cache
+        key: cache-lake-data
+    - name: Notebook changed
+      id: changed-files
+      uses: tj-actions/changed-files@v34
+      with:
+        files: |
+          *.ipynb
+    - uses: "treebeardtech/nbmake-action@v0.2.1"
+      if: steps.changed-files.outputs.any_changed == 'true'
+      with:
+        workdir: .
+        path-output: ./output
+        notebooks: |
+          *.ipynb
+          # 'sub dir/*.ipynb'
+    - uses: actions/upload-artifact@v3
+      if: always()
+      with:
+        name: output
+        path: ./output
