@@ -37,11 +37,9 @@ Or run online via *Binder* using the link to *nbviewer* above and then click the
 
 ## FAQ
 
-Q: Can you share your alpha? / Should we share our alpha?
-A: No. The point of quant research is that everyone should come up with his own 'alpha'. This repository and *Lake* project just aim to make this easier by sharing the basics.
-
-Q: Give me the market data for free.
-A: We actually have to pay to collect them and even pay for the traffic when you're downloading them from AWS.
-
-Q: Can I also use other data than *Lake*?
-A: Sure, but don't mix data sources unless necessary.
+- Q: Can you share your alpha? / Should we share our alpha?
+  - A: No. The point of quant research is that everyone should come up with his own 'alpha'. This repository and *Lake* project just aim to make this easier by sharing the basics.
+- Q: Give me the market data for free.
+  - A: We actually have to pay to collect them and even pay for the traffic when you're downloading them from AWS.
+- Q: Can I also use other data than *Lake*?
+  - A: Sure, but don't mix data sources unless necessary.

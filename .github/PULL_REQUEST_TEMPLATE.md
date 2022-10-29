@@ -3,6 +3,6 @@
 
 Checklist:
 
-- [ ] CI passed -- the notebooks are runnable
+- [ ] CI passed -- the notebooks are runable
 - [ ] I added markdown intro description in the notebook header
 - [ ] ... and conclusions in the footer
