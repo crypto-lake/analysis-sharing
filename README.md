@@ -19,3 +19,9 @@ We would like to support data-driven research in the field of cryptocurrency tra
 Whoever contributes the best pull request into this repository, be it a new notebook or an improvement of an existing one will win a 1 year free *Crypto Lake* subscription and therefore access to up to 2 years of history of around 60 trading pairs for both big cap crypto tokens and small tokens traded in the Hummingbot liquidity campaigns. You can qualify by having any pull request merged by the end of 2022.
 
 To clarify, the contributions don't have to be related to Hummingbot or its pure market-making strategy, they don't have to be profitable, but should be valuable by bringing insight into the market.
+
+## Usage
+
+Run locally with python3.8+. Install requirements.txt and run using `jupyter notebook` shell command.
+
+Or run online via Binder using the link to nbviewer above and then the three rings icon to the top-left.
