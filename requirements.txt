@@ -2,3 +2,4 @@ numpy==1.23.4
 pandas==1.5.1
 cufflinks==0.17.3
 lakeapi==0.2.0
+jupyter==1.0.0
