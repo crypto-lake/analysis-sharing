@@ -1,18 +1,20 @@
 # Analysis sharing
 
-Sharing quantitative analyses on [Lake data](https://crypto-lake.com/#data).
+Sharing quantitative analyses on [Lake data](https://crypto-lake.com/#data). For more about us, see our [mission](https://crypto-lake/mission/).
 
 ## Hummingbot analysis
 
 In the first notebook we analyse [Hummingbot](https://hummingbot.org/) market-making strategy on a combination of trade and level1 order book data. In a very simple simulation we can experiment with the profitability of variants of this strategy on historical data.
 
-[**-> Open the notebook**](https://nbviewer.org/github/crypto-lake/analysis-sharing/blob/hb-backtest/hummingbot_backtest.ipynb)
+We estimate that with this data-driven backtesting approach, you can **prevent a trading loss of >=10% of your open order nominal monthly** even with a pretty simple analysis compared to the usual '*run the bot, check results after some time, tune parameters, repeat*' approach. Plus you save a lot of time. Note that this loss can be much bigger on volatile low-volume coins.
 
-We estimate that with this data-driven backtesting approach, you can **prevent a trading loss of 5% of your open order nominal monthly** even with a pretty simple analysis compared to the usual '*run the bot, check results after some time, tune parameters, repeat*' approach. Plus you save a lot of time. Note that this loss can be much bigger on volatile low-volume coins.
+[**-> Open the notebook in nbviewer**](https://nbviewer.org/github/crypto-lake/analysis-sharing/blob/hb-backtest/hummingbot_backtest.ipynb)
 
 ## Contributing
 
 We would like to support data-driven research in the field of cryptocurrency trading and especially market-making. We encourage you to share your analyses and contribute to the existing ones in this repository by opening pull requests.
+
+There are really no contribution rules besides the quant research rule #1: keep things simple.
 
 ## Competition
 
