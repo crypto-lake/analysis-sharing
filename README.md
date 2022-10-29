@@ -42,3 +42,6 @@ A: No. The point of quant research is that everyone should come up with his own 
 
 Q: Give me the market data for free.
 A: We actually have to pay to collect them and even pay for the traffic when you're downloading them from AWS.
+
+Q: Can I also use other data than *Lake*?
+A: Sure, but don't mix data sources unless necessary.
