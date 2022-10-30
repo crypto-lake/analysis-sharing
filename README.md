@@ -29,6 +29,8 @@ There are a few contribution rules:
 - each notebook should have markdown intro description in its header and conclusions in the footer
 - prefer realistic simulation to smart trading logic/model
 
+See the list of freely available [sample data](available-sample-data.png) or the [data schemata](https://crypto-lake.com/data/).
+
 ## Usage
 
 Run locally with python3.8 or later. Install requirements.txt and run using `jupyter notebook` shell command.
