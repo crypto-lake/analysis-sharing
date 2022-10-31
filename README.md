@@ -1,12 +1,12 @@
 # Analysis sharing
 
-Sharing crypto-related quantitative analyses on [Lake data](https://crypto-lake.com/#data). For more about us, see our [mission](https://crypto-lake/mission/). This repository is curated and reviewed by *Lefty*, an experienced quant and former *Head of Research* of an equity prop-trading company, who is currently on top of the *Hummingbot* [leaderboard](https://miner.hummingbot.io/leaderboard).
+Sharing crypto-related quantitative analyses on [Crypto Lake data](https://crypto-lake.com/#data). For more about us, see our [mission](https://crypto-lake/mission/). This repository is curated and reviewed by *Lefty*, an experienced quant and former *Head of Research* of an equity prop-trading company, who is currently on top of the *Hummingbot* [leaderboard](https://miner.hummingbot.io/leaderboard).
 
 ## 1. Hummingbot analysis
 
 In the first notebook, we analyze [Hummingbot](https://hummingbot.org/) market-making strategy on a combination of trade and level1 order book data. In a very simple simulation, we can experiment with the profitability of variants of this strategy on historical data. This is intended as a basis for your own analysis, not as a direct basis for trading.
 
-We estimate that with this data-driven backtesting approach, you can **prevent a trading loss of >=10% of your open order nominal monthly** even with a pretty simple analysis compared to the usual '*run the bot, check results after some time, tune parameters, repeat*' approach. And you save a lot of time. Note that this effect can be much bigger on volatile low-volume coins.
+We estimate that with this data-driven backtesting approach, you can **prevent a trading loss of >=10% of your open order nominal monthly** even with a pretty simple analysis compared to the usual '*run the bot, check results after some time, tune parameters, repeat*' approach. And you save a lot of time. Note that this effect can be much bigger on volatile low-volume coins. To support this in the Hummingbot community, we offer a 50% [Crypto Lake data](https://crypto-lake.com/#data) discount with discount code *HBOT50*.
 
 [**-> Open the notebook in nbviewer**](https://nbviewer.org/github/crypto-lake/analysis-sharing/blob/main/hummingbot_backtest.ipynb)
 
@@ -45,7 +45,13 @@ Or run online via *Binder* using the link to *nbviewer* above and then click the
 
 - Q: Can you share your alpha? / Should we share our alpha?
   - A: No. The point of quant research is that everyone should come up with his own 'alpha'. This repository and *Lake* project just aim to make this easier by sharing the basics.
-- Q: Give me the market data for free.
+- Q: Can you give me the market data for free?
   - A: We actually have to pay to collect them and even pay for the traffic when you're downloading them from AWS.
 - Q: Can I also use other data than *Lake*?
   - A: Sure, but don't mix data sources unless necessary.
+- Q: I need more data for my competition contribution, can you provide it?
+  - A: Probably yes, ask us once you open PR and send some code, so we can assess.
+- Q: Must the code be perfect? I am concerned with my programming skills.
+  - A: No, the code is secondary to a good analysis. Just clean it up and perhaps consider its readability before first opening PR. We prefer early PRs to perfect PRs.
+- Q: Where can I follow *Lake* and this competition?
+  - A: <a href="https://twitter.com/intent/user?screen_name=crypto_lake_com">Follow us on Twitter</a>
