@@ -10,6 +10,8 @@ We estimate that with this data-driven backtesting approach, you can **prevent a
 
 [**-> Open the notebook in nbviewer**](https://nbviewer.org/github/crypto-lake/analysis-sharing/blob/main/hummingbot_backtest.ipynb)
 
+---
+
 ## Competition
 
 We would like to support data-driven research in the field of cryptocurrency trading and especially market-making. We encourage you to share your analyses and contribute to the existing ones in this repository by opening pull requests. For your effort, you get a review of your analysis ideas and code, which will help you get better at quantitative analysis and its implementation.
@@ -30,6 +32,8 @@ There are a few contribution rules:
 - prefer realistic simulation to smart trading logic/model
 
 See the list of freely available [sample data](available-sample-data.png) or the [data schemata](https://crypto-lake.com/data/).
+
+---
 
 ## Usage
 
