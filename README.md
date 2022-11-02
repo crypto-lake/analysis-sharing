@@ -53,5 +53,7 @@ Or run online via *Binder* using the link to *nbviewer* above and then click the
   - A: Probably yes, ask us once you open PR and send some code, so we can assess.
 - Q: Must the code be perfect? I am concerned with my programming skills.
   - A: No, the code is secondary to a good analysis. Just clean it up and perhaps consider its readability before first opening PR. We prefer early PRs to perfect PRs.
+- Q: Can I order a paid data subscription and then participate/win the competition?
+  - A: Sure, If you win, we will stop charging the subscription fee for a year.
 - Q: Where can I follow *Lake* and this competition?
   - A: <a href="https://twitter.com/intent/user?screen_name=crypto_lake_com">Follow us on Twitter</a>
