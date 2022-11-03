@@ -1,12 +1,12 @@
 # Analysis sharing
 
-Sharing crypto-related quantitative analyses on [Crypto Lake data](https://crypto-lake.com/#data). For more about us, see our [mission](https://crypto-lake/mission/). This repository is curated and reviewed by *Lefty*, an experienced quant and former *Head of Research* of an equity prop-trading company, who is currently on top of the *Hummingbot* [leaderboard](https://miner.hummingbot.io/leaderboard).
+Sharing crypto-related quantitative analyses on [Crypto Lake data](https://crypto-lake.com/#data). This repository is curated and reviewed by *Lefty*, an experienced quant and former *Head of Research* of an equity prop-trading company, who is currently on top of the *Hummingbot* [leaderboard](https://miner.hummingbot.io/leaderboard).
 
 ## 1. Hummingbot analysis
 
 In the first notebook, we analyze [Hummingbot](https://hummingbot.org/) market-making strategy on a combination of trade and level1 order book data. In a very simple simulation, we can experiment with the profitability of variants of this strategy on historical data. This is intended as a basis for your own analysis, not as a direct basis for trading.
 
-We estimate that with this data-driven backtesting approach, you can **prevent a trading loss of >=10% of your open order nominal monthly** even with a pretty simple analysis compared to the usual '*run the bot, check results after some time, tune parameters, repeat*' approach. And you save a lot of time. Note that this effect can be much bigger on volatile low-volume coins. To support this in the Hummingbot community, we offer a 50% [Crypto Lake data](https://crypto-lake.com/#data) discount with discount code *HBOT50*.
+We estimate that with this data-driven backtesting approach, you can **prevent a trading loss of >=10% of your open order nominal monthly** even with a pretty simple analysis compared to the usual '*run the bot, check results after some time, tune parameters, repeat*' approach. And you save a lot of time. Note that this effect can be much bigger on volatile low-volume coins. To support this in the Hummingbot community, we offer a 50% [Crypto Lake data](https://crypto-lake.com/#hbot) discount with discount code *HBOT50*.
 
 [**-> Open the notebook in nbviewer**](https://nbviewer.org/github/crypto-lake/analysis-sharing/blob/main/hummingbot_backtest.ipynb)
 
@@ -16,11 +16,11 @@ We estimate that with this data-driven backtesting approach, you can **prevent a
 
 We would like to support data-driven research in the field of cryptocurrency trading and especially market-making. We encourage you to share your analyses and contribute to the existing ones in this repository by opening pull requests. For your effort, you get a review of your analysis ideas and code, which will help you get better at quantitative analysis and its implementation.
 
-Whoever contributes the best pull request into this repository, be it a new notebook or an improvement of an existing one will **win a 1 year free *Crypto Lake* date subscription** (worth $840) and therefore access to up to 2 years of history of around 60 trading pairs for both big cap crypto tokens and small tokens traded in the Hummingbot liquidity campaigns. You can qualify by having any pull request merged by the end of 2022.
+Whoever contributes the best pull request into this repository, be it a new notebook or an improvement of an existing one will **win a 1 year free *Crypto Lake* date subscription** (worth $480) and therefore access to up to 2 years of history of around 60 trading pairs for both big cap crypto tokens and small tokens traded in the Hummingbot liquidity campaigns. You can qualify by having any pull request merged by the end of 2022.
 
-To clarify, the contributions don't have to be related to Hummingbot or its pure market-making strategy, they don't have to be profitable, but should be valuable by bringing insight into the market. We reserve the right to choose the best contribution or have a community vote.
+To clarify, the contributions don't have to be related to Hummingbot or its pure market-making strategy, they don't have to be profitable, but should be valuable by bringing insight into the market. You can even just contribute a slight modification of your existing research. We reserve the right to choose the best contribution or have a community vote.
 
-We also strongly recommend discussing a topic of research if you haven't started yet. We may also have some hints for you! Let us know via issues here or on *hi (at) crypto-lake . com*. If you are an experienced quant, you might just contribute your existing research.
+**To join the competition, email us at hi (at) crypto-lake (.) com**. We will send you back some research tips for the start.
 
 ## Contributing
 
