@@ -16,6 +16,6 @@ Extend the Hummingbot [Pure Market Making](https://docs.hummingbot.org/strategie
 
 | compexity | description |
 | -- | -- |
-| easy | Analyze FTRB-USDT price differences between ASCENDEX and GATEIO exchanges. You can compare mid-to-mid distance for start. Print out statistics how big the price differences are and for how long they last. |
-| hard | Backtest arbitraging the above. |
+| easy | **Analyze arbitrage** (= price differences) on FTRB-USDT between ASCENDEX and GATEIO exchanges. You can compare mid-to-mid distance for start. Print out statistics how big the price differences are and for how long they last. |
+| hard | **Backtest arbitrage** strategy for the above. |
 <!-- | easy | Analyze **Leaderboard** history. How many people from historical top 10 stay there longer then eg. 3 months? For how long are people from current top 20 using Hummingbot? This would tell us more about how hard is profitable liquidity mining. <br> Use *<https://api.hummingbot.io/bounty/leaderboard?start=1667260800000&market_id=-1>* json api endpoint| -->
