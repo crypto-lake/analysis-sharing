@@ -55,5 +55,7 @@ Or run online via *Binder* using the link to *nbviewer* above and then click the
   - A: No, the code is secondary to a good analysis. Just clean it up and perhaps consider its readability before first opening PR. We prefer early PRs to perfect PRs.
 - Q: Can I order a paid data subscription and then participate/win the competition?
   - A: Sure, If you win, we will stop charging the subscription fee for a year.
+- Q: When should I submit my entry?
+  - A: The competition ends at the end of December, but in order to get the code merged, I would suggest opening a Pull Request in mid-December at the latest. Or you can open a PR with incomplete code even earlier if you want more feedback on the ideas and not just the code.
 - Q: Where can I follow *Lake* and this competition?
   - A: <a href="https://twitter.com/intent/user?screen_name=crypto_lake_com">Follow us on Twitter</a>
