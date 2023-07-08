@@ -22,6 +22,12 @@ We detect simple every-minute TWAP orders/executions in tick data and analyze th
 
 [**-> Open the notebook in nbviewer**](https://nbviewer.org/github/crypto-lake/analysis-sharing/blob/main/twap_detection.ipynb)
 
+## 4. Fake volume detection
+
+We detect fake volume in tick data by comparing trade prices to order book bests.
+
+[**-> Open the notebook in nbviewer**](https://nbviewer.org/github/crypto-lake/analysis-sharing/blob/main/fake_volume_detection.ipynb)
+
 ---
 
 ## Contributing
