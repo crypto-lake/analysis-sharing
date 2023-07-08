@@ -32,16 +32,5 @@ jobs:
         files: |
           *.ipynb
     - name: Run all notebooks
-      uses: "treebeardtech/nbmake-action@v0.2.1"
+      run: 'pytest nbmake *.ipynb'
       if: steps.changed-files.outputs.any_changed == 'true'
-      with:
-        workdir: .
-        path-output: ./output
-        notebooks: |
-          *.ipynb
-          # 'sub dir/*.ipynb'
-    - uses: actions/upload-artifact@v3
-      if: always()
-      with:
-        name: output
-        path: ./output
