@@ -1,6 +1,8 @@
+setuptools==59.6.0
 numpy==1.23.4
 pandas==1.5.1
 cufflinks==0.17.3
-lakeapi==0.4.4
-notebook==6.5.2
-scipy==1.9.3
+lakeapi==0.5.0
+notebook==6.5.4
+scipy==1.11.1
+kaleido==0.2.1
