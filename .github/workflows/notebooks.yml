@@ -18,7 +18,6 @@ jobs:
       with:
         requirement_files: requirements.txt
     - run: pip install -r requirements.txt
-      if: steps.cache-virtualenv.outputs.cache-hit != 'true'
     - name: Cache Lake data
       id: cache-lake-data
       uses: actions/cache@v3
