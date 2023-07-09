@@ -31,5 +31,5 @@ jobs:
         files: |
           *.ipynb
     - name: Run all notebooks
-      run: 'pytest nbmake *.ipynb'
+      run: 'pytest --nbmake *.ipynb'
       if: steps.changed-files.outputs.any_changed == 'true'
