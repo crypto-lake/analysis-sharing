@@ -1,6 +1,6 @@
 # Analysis sharing
 
-Sharing crypto-related quantitative analyses on our [historical market data](https://crypto-lake.com/#data), which are distinctive by including also the [order book data](https://crypto-lake.com/order-book-data/). This repository is curated and reviewed by *Lefty*, an experienced quant and former *Head of Research* of an equity prop-trading company, who is currently on top of the *Hummingbot* [leaderboard](https://miner.hummingbot.io/leaderboard).
+Sharing crypto-related quantitative analyses on our [historical market data](https://crypto-lake.com/#utm_source=github&utm_medium=organic&utm_campaign=analysis-sharing&utm_term=historical-market-data), which are distinctive by including also the [order book data](https://crypto-lake.com/order-book-data/#utm_source=github&utm_medium=organic&utm_campaign=analysis-sharing&utm_term=order-book-data). This repository is curated and reviewed by *Lefty*, an experienced quant and former *Head of Research* of an equity prop-trading company, who is currently on top of the *Hummingbot* [leaderboard](https://miner.hummingbot.io/leaderboard).
 
 ## 1. Hummingbot analysis
 
