@@ -129,3 +129,5 @@ dmypy.json
 .pyre/
 
 .lake_cache
+session.tw_session
+*_tweets.csv
