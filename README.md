@@ -28,6 +28,12 @@ We detect fake volume in tick data by comparing trade prices to order book bests
 
 [**-> Open the notebook in nbviewer**](https://nbviewer.org/github/crypto-lake/analysis-sharing/blob/main/fake_volume_detection.ipynb)
 
+## 5. Twitter influencer analysis
+
+Backtest of a simple twitter influencer counter-trade strategy. Inspired by the well known Inverse-Cramer strategy.
+
+[**-> Open the notebook in nbviewer**](https://nbviewer.org/github/crypto-lake/analysis-sharing/blob/main/twitter_analysis.ipynb)
+
 ---
 
 ## Contributing
