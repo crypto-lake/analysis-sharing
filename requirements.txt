@@ -5,6 +5,6 @@ cufflinks==0.17.3
 lakeapi==0.6.3
 notebook==6.5.4
 scipy==1.11.1
-# kaleido==0.2.1
+kaleido==0.2.1
 pytest==7.4.0
 nbmake==1.4.1
