@@ -1,6 +1,6 @@
 # Analysis sharing
 
-Sharing crypto-related quantitative analyses on our [historical market data](https://crypto-lake.com/#utm_source=github&utm_medium=organic&utm_campaign=analysis-sharing&utm_term=historical-market-data), which are distinctive by including also the [order book data](https://crypto-lake.com/order-book-data/#utm_source=github&utm_medium=organic&utm_campaign=analysis-sharing&utm_term=order-book-data). This repository is curated and reviewed by *Lefty*, an experienced quant and former *Head of Research* of an equity prop-trading company, who is currently on top of the *Hummingbot* [leaderboard](https://miner.hummingbot.io/leaderboard).
+Sharing crypto-related quantitative analyses on our [historical market data](https://crypto-lake.com/?utm_source=github&utm_medium=organic&utm_campaign=analysis-sharing&utm_term=historical-market-data), which are distinctive by including also the [order book data](https://crypto-lake.com/order-book-data/?utm_source=github&utm_medium=organic&utm_campaign=analysis-sharing&utm_term=order-book-data). This repository is curated and reviewed by *Lefty*, an experienced quant and former *Head of Research* of an equity prop-trading company, who is currently on top of the *Hummingbot* [leaderboard](https://miner.hummingbot.io/leaderboard).
 
 ## 1. Hummingbot analysis
 
@@ -12,7 +12,7 @@ We estimate that with this data-driven backtesting approach, you can **prevent a
 
 ## 2. Exploratory analysis
 
-This notebook is looking on MM profitability, spread characteristics, order-book imbalance and a few autocorrelations on high-frequency order book data. There are some interesting results on extreme order-book imbalances and short-term returns autocorrelations.
+This notebook is looking on MM profitability, spread characteristics, order-book imbalance and a few autocorrelations on [crypto order book data](https://crypto-lake.com/?utm_source=github&utm_medium=organic&utm_campaign=analysis-sharing&utm_term=crypto-order-book-data). There are some interesting results on extreme order-book imbalances and short-term returns autocorrelations.
 
 [**-> Open first of the two notebooks in nbviewer**](https://nbviewer.org/github/crypto-lake/analysis-sharing/blob/main/exploratory_analysis/Crypto_Microstructure_BTC_USDT_Exploratory_Analysis.ipynb)
 
