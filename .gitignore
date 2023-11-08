@@ -131,3 +131,4 @@ dmypy.json
 .lake_cache
 session.tw_session
 *_tweets.csv
+*.npz
