@@ -33,85 +33,61 @@ def convert_trade(vals, buffer_size, progress_hook):
 def convert_books(vals, buffer_size, progress_hook):
     tmp = np.empty((buffer_size, 6), np.float64)
     row_num = 0
-    is_snapshot = False
     ss_bid = None
     ss_ask = None
     rns = [0, 0]
     for idx in range(len(vals)):
         progress_hook.update()
         cols = vals[idx]
-        if True: # everything is snapshot
-        # if cols[4] == 'true':
-            # if (snapshot_mode == 'ignore') or (snapshot_mode == 'ignore_sod' and is_sod_snapshot):
-            #     continue
-            # Prepare to insert DEPTH_SNAPSHOT_EVENT
-            if True: #not is_snapshot:
-                # is_snapshot = True
-                ss_bid = np.empty((50, 6), np.float64)
-                ss_ask = np.empty((50, 6), np.float64)
-                rns = [0, 0]
-            for side_idx, side, side_sign in ((0, ss_bid, 1), (1, ss_ask, -1)):
-                for level in range(0, 20):
-                    price = cols.iloc[3 + level * 2 + side_idx * 40]
-                    qty = cols.iloc[4 + level * 2 + side_idx * 40]
-                    side[rns[side_idx]] = [
-                        DEPTH_SNAPSHOT_EVENT,
-                        cols[0],
-                        cols[1],
-                        side_sign,
-                        price,
-                        qty,
-                    ]
-                    rns[side_idx] += 1
-        if True:
-            # is_sod_snapshot = False
-            if True: #is_snapshot:
-                # End of the snapshot.
-                # is_snapshot = False
-
-                # Add DEPTH_CLEAR_EVENT before refreshing the market depth by the snapshot.
-
-                ss_bid = ss_bid[:rns[0]]
-                # Clear the bid market depth within the snapshot bid range.
-                tmp[row_num] = [
-                    DEPTH_CLEAR_EVENT,
-                    ss_bid[0, 1],
-                    ss_bid[0, 2],
-                    1,
-                    ss_bid[-1, 4],
-                    0
+        ss_bid = np.empty((50, 6), np.float64)
+        ss_ask = np.empty((50, 6), np.float64)
+        rns = [0, 0]
+        for side_idx, side, side_sign in ((0, ss_bid, 1), (1, ss_ask, -1)):
+            for level in range(0, 20):
+                price = cols.iloc[3 + level * 2 + side_idx * 40]
+                qty = cols.iloc[4 + level * 2 + side_idx * 40]
+                side[rns[side_idx]] = [
+                    DEPTH_SNAPSHOT_EVENT,
+                    cols[0],
+                    cols[1],
+                    side_sign,
+                    price,
+                    qty,
                 ]
-                row_num += 1
-                # Add DEPTH_SNAPSHOT_EVENT for the bid snapshot
-                tmp[row_num:row_num + len(ss_bid)] = ss_bid[:]
-                row_num += len(ss_bid)
-                ss_bid = None
+                rns[side_idx] += 1
 
-                ss_ask = ss_ask[:rns[1]]
-                # Clear the ask market depth within the snapshot ask range.
-                tmp[row_num] = [
-                    DEPTH_CLEAR_EVENT,
-                    ss_ask[0, 1],
-                    ss_ask[0, 2],
-                    -1,
-                    ss_ask[-1, 4],
-                    0
-                ]
-                row_num += 1
-                # Add DEPTH_SNAPSHOT_EVENT for the ask snapshot
-                tmp[row_num:row_num + len(ss_ask)] = ss_ask[:]
-                row_num += len(ss_ask)
-                ss_ask = None
-            # # Insert DEPTH_EVENT
-            # tmp[row_num] = [
-            #     DEPTH_EVENT,
-            #     int(cols[2]),
-            #     int(cols[3]),
-            #     1 if cols[5] == 'bid' else -1,
-            #     float(cols[6]),
-            #     float(cols[7])
-            # ]
-            # row_num += 1
+        ss_bid = ss_bid[:rns[0]]
+        # Clear the bid market depth within the snapshot bid range.
+        tmp[row_num] = [
+            DEPTH_CLEAR_EVENT,
+            ss_bid[0, 1],
+            ss_bid[0, 2],
+            1,
+            ss_bid[-1, 4],
+            0
+        ]
+        row_num += 1
+
+        tmp[row_num:row_num + len(ss_bid)] = ss_bid[:]
+        row_num += len(ss_bid)
+        ss_bid = None
+
+        ss_ask = ss_ask[:rns[1]]
+
+        tmp[row_num] = [
+            DEPTH_CLEAR_EVENT,
+            ss_ask[0, 1],
+            ss_ask[0, 2],
+            -1,
+            ss_ask[-1, 4],
+            0
+        ]
+        row_num += 1
+
+        tmp[row_num:row_num + len(ss_ask)] = ss_ask[:]
+        row_num += len(ss_ask)
+        ss_ask = None
+
     return tmp[:row_num]
 
 @njit(cache=True)
@@ -126,8 +102,6 @@ def convert_book_diffs(vals, buffer_size, ss_buffer_size, progress_hook):
         progress_hook.update()
         cols = vals[idx]
         if cols[0] == 0:
-            # if (snapshot_mode == 'ignore') or (snapshot_mode == 'ignore_sod' and is_sod_snapshot):
-            #     continue
             # Prepare to insert DEPTH_SNAPSHOT_EVENT
             if not is_snapshot:
                 is_snapshot = True
@@ -155,7 +129,6 @@ def convert_book_diffs(vals, buffer_size, ss_buffer_size, progress_hook):
                 ]
                 rns[1] += 1
         else:
-            # is_sod_snapshot = False
             if is_snapshot:
                 # End of the snapshot.
                 is_snapshot = False
@@ -213,7 +186,6 @@ def convert(
         ss_buffer_size: int = 5_000,
         base_latency: float = 0,
         method: Literal['separate', 'adjust', 'keep'] = 'adjust',
-        # snapshot_mode: Literal['process', 'ignore_sod', 'ignore'] = 'process'
 ) -> NDArray:
     r"""
     Converts Crypto Lake data files into a format compatible with HftBacktest.
