@@ -1,6 +1,6 @@
 # Analysis sharing
 
-Sharing crypto-related quantitative analyses on our [historical market data](https://crypto-lake.com/?utm_source=github&utm_medium=organic&utm_campaign=analysis-sharing&utm_term=historical-market-data), which are distinctive by including also the [order book data](https://crypto-lake.com/order-book-data/?utm_source=github&utm_medium=organic&utm_campaign=analysis-sharing&utm_term=order-book-data). This repository is curated and reviewed by *Lefty*, an experienced quant and former *Head of Research* of an equity prop-trading company, who is currently on top of the *Hummingbot* [leaderboard](https://miner.hummingbot.io/leaderboard).
+Sharing crypto-related quantitative analyses on our [historical market data](https://crypto-lake.com/?utm_source=github&utm_medium=organic&utm_campaign=analysis-sharing&utm_term=historical-market-data), which are distinctive by including also the [order book data](https://crypto-lake.com/order-book-data/?utm_source=github&utm_medium=organic&utm_campaign=analysis-sharing&utm_term=order-book-data). This repository is curated and reviewed by *Jan Skoda*, an experienced quant and former *Head of Research* of an equity prop-trading company, who is also running a [Market Maker's blog](https://quant.xme.cz/?utm_source=github&utm_medium=organic&utm_campaign=analysis-sharing).
 
 ## 1. Hummingbot analysis
 
@@ -37,6 +37,8 @@ Backtest of a simple twitter influencer counter-trade strategy. Inspired by the 
 ---
 
 ## Contributing
+
+By contributing into this repository, you can earn a few free weeks of subscription time on crypto-lake.com market data. If you have an idea of what to contribute or want suggestions, [email us](https://crypto-lake.com/contact/). Then just fork this repo and open a pull request once you're ready.
 
 There are a few contribution rules:
 
